@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff">
+  <meta name="description" content="Магазин Rickovns Roleplay: Coins и игровые возможности для твоего персонажа.">
+  <title>Магазин Rickovns — Coins и игровые товары</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="donate.css">
+</head>
+<body class="store-page">
+  <header class="store-header">
+    <a class="brand store-brand" href="index.html" aria-label="Rickovns — главная"><span class="brand-mark">R</span><span>RICKOVNS<span class="brand-sub">ROLEPLAY</span></span></a>
+    <nav class="store-nav" aria-label="Навигация магазина"><a href="index.html">Главная</a><a href="index.html#news">Новости</a><a href="index.html#forum">Форум</a><a class="store-nav-active" href="donate.html">Донат</a></nav>
+    <div class="store-header-actions"><a class="store-account-trigger" href="account.html">Личный кабинет</a><button class="store-cart-trigger" type="button" aria-controls="store-cart" aria-expanded="false">Корзина <span class="cart-count">0</span><b>▱</b></button></div>
+  </header>
+
+  <main class="store-main">
+    <div class="store-breadcrumb"><a href="index.html">Главная</a><span>/</span><span>Магазин</span></div>
+    <section class="store-categories" aria-label="Категории товаров">
+      <button class="category-card" type="button" data-category="number" aria-pressed="false"><span class="category-icon ticket-icon" aria-hidden="true">▰</span><strong>ЭКСКЛЮЗИВНЫЙ</strong><span>НОМЕР</span></button>
+      <button class="category-card" type="button" data-category="stash" aria-pressed="false"><span class="category-icon stash-icon" aria-hidden="true">▤</span><strong>ТЮРЕМНАЯ</strong><span>НАКОПКА</span></button>
+      <button class="category-card category-active" type="button" data-category="coins" aria-pressed="true"><span class="category-icon dollar-icon" aria-hidden="true">◉</span><strong>ИГРОВАЯ</strong><span>ВАЛЮТА COINS</span></button>
+      <button class="category-card" type="button" data-category="nickname" aria-pressed="false"><span class="category-icon person-icon" aria-hidden="true">●</span><strong>СМЕНА</strong><span>НИКНЕЙМА</span></button>
+      <button class="category-card" type="button" data-category="admin" aria-pressed="false"><span class="category-icon admin-icon" aria-hidden="true">R</span><strong>ДОСТУП</strong><span>АДМИНИСТРАТОРА</span></button>
+    </section>
+
+    <section class="store-intro" id="coin-packages">
+      <div><span class="store-kicker">МАГАЗИН RICKOVNS / COINS</span><h1>ПОПОЛНИ БАЛАНС<br><span>С ВЫГОДОЙ</span></h1><p>Выбери пакет Coins для своего персонажа. Игровая валюта откроет доступ к новым возможностям и покупкам в городе.</p></div>
+      <div class="store-coin-mark" aria-hidden="true"><span>R</span><small>COINS</small></div>
+    </section>
+
+    <div class="store-toolbar"><div><strong class="store-category-title">ИГРОВАЯ ВАЛЮТА</strong><span class="store-category-subtitle">ПАКЕТЫ COINS</span></div><label class="store-currency-label">Оплачивать в <select data-store-currency aria-label="Валюта покупки"><option value="UAH">UAH ₴</option><option value="USD">USD $</option><option value="EUR">EUR €</option><option value="USDT">USDT ₮</option><option value="RUB">RUB ₽</option></select></label><div class="store-sort">ПАКЕТОВ: 05</div></div>
+    <section class="product-grid" aria-label="Пакеты игровой валюты Coins">
+      <article class="product-card"><div class="product-art art-small"><div class="money-stack"><i></i><i></i><i></i></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">·</span></div><div class="product-info"><span class="product-kind">НАБОР / СТАРТ</span><h2>Coins для начала</h2><div class="product-amount">100 000 <small>COINS</small></div><button class="purchase-button" data-coins="100000">В корзину <span>＋</span></button></div></article>
+      <article class="product-card"><div class="product-art art-medium"><div class="money-stack"><i></i><i></i><i></i><i></i></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">·</span></div><div class="product-info"><span class="product-kind">НАБОР / ПОПУЛЯРНЫЙ</span><h2>Уверенный старт</h2><div class="product-amount">250 000 <small>COINS</small></div><button class="purchase-button" data-coins="250000">В корзину <span>＋</span></button></div></article>
+      <article class="product-card"><div class="product-art art-large"><div class="money-stack"><i></i><i></i><i></i><i></i><i></i></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">·</span></div><div class="product-info"><span class="product-kind">НАБОР / ВЫГОДНЫЙ</span><h2>Самое то</h2><div class="product-amount">550 000 <small>COINS</small></div><button class="purchase-button" data-coins="550000">В корзину <span>＋</span></button></div></article>
+      <article class="product-card"><div class="product-art art-vault"><div class="money-stack"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">·</span></div><div class="product-info"><span class="product-kind">НАБОР / БОЛЬШОЙ</span><h2>Ворочай делами</h2><div class="product-amount">1 390 000 <small>COINS</small></div><button class="purchase-button" data-coins="1390000">В корзину <span>＋</span></button></div></article>
+      <article class="product-card product-premium"><div class="product-art art-gold"><div class="money-stack"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✦</span></div><div class="product-info"><span class="product-kind">НАБОР / МАКСИМУМ</span><h2>Золотые запасы</h2><div class="product-amount">7 500 000 <small>COINS</small></div><button class="purchase-button" data-coins="7500000">В корзину <span>＋</span></button></div></article>
+    </section>
+    <div class="category-empty" hidden><strong class="empty-title">РАЗДЕЛ СКОРО ОТКРОЕТСЯ</strong><p class="empty-copy">Каталог пополняется. Пока можно выбрать пакет Coins.</p><button type="button" class="empty-back" data-category="coins">Перейти к Coins ↗</button></div>
+    <section class="admin-config" hidden aria-label="Покупка доступа администратора"><div><span class="product-kind">ПРИВИЛЕГИЯ СЕРВЕРА</span><h2>Выбери уровень и срок</h2><p>Доступ привязывается к игровому нику. Цены — временные демонстрационные.</p></div><label>Уровень<select id="admin-level"><option value="1">Уровень 1 — помощник</option><option value="2">Уровень 2 — модератор</option><option value="3">Уровень 3 — старший модератор</option><option value="4">Уровень 4 — администратор</option><option value="5">Уровень 5 — главный администратор</option></select></label><label>Срок<select id="admin-term"><option value="30">30 дней</option><option value="90">90 дней</option><option value="365">365 дней</option></select></label><div class="admin-price">Цена: <strong id="admin-price">1 490 ₽</strong></div><button class="purchase-button admin-add" type="button" data-add-admin>Добавить в корзину <span>＋</span></button><small class="demo-disclaimer">Демонстрационный каталог. Оплата и выдача появятся после подключения платёжной системы и игрового сервера.</small></section>
+    <p class="store-note">Оплата и автоматическая выдача по нику пока не подключены. Заказы в этой версии сохраняются как демонстрационные.</p>
+  </main>
+
+  <aside class="store-cart" id="store-cart" aria-label="Корзина" aria-hidden="true"><div class="cart-head"><div><span class="store-kicker">ТВОЙ ЗАКАЗ</span><h2>Корзина</h2></div><button class="cart-close" type="button" aria-label="Закрыть корзину">×</button></div><div class="cart-items"></div><div class="cart-total"><span>К ОПЛАТЕ</span><strong>0</strong></div><label class="cart-nickname-label">Игровой ник, для которого покупка<input class="cart-nickname" type="text" required minlength="3" maxlength="25" pattern="[A-Za-z]+_[A-Za-z]+" placeholder="Имя_Фамилия" autocomplete="off"></label><button class="cart-checkout" type="button" disabled>Перейти к оплате <span>↗</span></button><p class="cart-caption">Демо: оплата и автоматическая выдача по нику пока не подключены.</p></aside>
+  <button class="cart-scrim" type="button" aria-label="Закрыть корзину" tabindex="-1"></button>
+  <footer class="store-footer"><a class="brand store-brand" href="index.html"><span class="brand-mark">R</span><span>RICKOVNS<span class="brand-sub">ROLEPLAY</span></span></a><span>© 2026 RICKOVNS</span><a href="index.html">Вернуться на сайт ↗</a></footer>
+  <div class="store-toast" role="status" aria-live="polite"></div>
+  <div class="checkout-dock"><span>Покупки привязываются к игровому нику</span><button type="button" data-open-checkout>Перейти к оплате <b>↗</b></button></div>
+  <script src="donate.js"></script>
+</body>
+</html>
